@@ -30,13 +30,4 @@ router.get('/info', compression(), (req, res) => {
   });
 });
 
-//--------------------------Evaluación de rendimiento modo dev----------------------
-
-router.get('/info/dev', (req, res) => {
-
-  res.send(`solicitando el entorno:${process.env.DEV}`)
-
-});
-
-
 export default router;
