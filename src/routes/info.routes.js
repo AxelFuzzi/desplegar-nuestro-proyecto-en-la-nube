@@ -16,18 +16,26 @@ router.get('/info', compression(), (req, res) => {
     numCPUs: cpus().length,
   };
   /* ------------------------ Evaluación de rendimiento ----------------------- */
-   console.log(info.args);
-   console.log(info.path);
-   console.log(info.os);
-   console.log(info.pid);
-   console.log(info.nodeVersion);
-   console.log(info.dirPath);
-   console.log(info.memoryUsage);
-   console.log(info.numCPUs);
+   //console.log(info.args);
+   //console.log(info.path);
+   //console.log(info.os);
+   //console.log(info.pid);
+   //console.log(info.nodeVersion);
+   //console.log(info.dirPath);
+   //console.log(info.memoryUsage);
+   //console.log(info.numCPUs);
   /* ----------------------------------- -- ----------------------------------- */
   res.status(200).render('layouts/viewInfo', {
     info,
   });
+});
+
+//--------------------------Evaluación de rendimiento modo dev----------------------
+
+router.get('/info/dev', (req, res) => {
+
+  res.send(`solicitando el entorno:${process.env.DEV}`)
+
 });
 
 
