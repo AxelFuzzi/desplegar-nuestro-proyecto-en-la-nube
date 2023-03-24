@@ -1,0 +1,3 @@
+[2023-03-18T17:15:54.172] [WARN] Warn - Ruta: "/ruta" | Método: "GET" | Respuesta HTTP: "404: Not Found"
+[2023-03-19T13:25:34.543] [WARN] Warn - Ruta: "/favicon.ico" | Método: "GET" | Respuesta HTTP: "404: Not Found"
+[2023-03-20T10:24:08.005] [WARN] Warn - Ruta: "/favicon.ico" | Método: "GET" | Respuesta HTTP: "404: Not Found"
