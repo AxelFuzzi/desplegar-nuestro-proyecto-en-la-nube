@@ -45,7 +45,7 @@ router.get('/info/env', compression(), (req, res) => {
     numCPUs: cpus().length,
   };
   
-  res.status(200).send('modo dev', {
+  res.status(200).send(`solicitando el entorno ${process.env.DEV}`, {
     info,
   });
 });
