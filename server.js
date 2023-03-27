@@ -9,7 +9,7 @@ import Sockets from './sockets.js';
 import { loggerInfo, loggerError } from './config/log4.js';
 
 /* ----------------------------- params settings ---------------------------- */
-const options = { default: { port: 8080 } };
+const options = { default: { port:process.env.PORT } };
 const args = parseArgs(process.argv.slice(2), options);
 const clusterMode = process.argv[4] == 'CLUSTER';
 
